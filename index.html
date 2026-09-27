@@ -395,6 +395,18 @@
     padding:5px 10px; border-radius:20px; white-space:nowrap; display:flex; align-items:center; gap:6px;
   }
   .project-status .dot2{ width:6px; height:6px; border-radius:50%; background:var(--cyan); box-shadow:0 0 6px var(--cyan); }
+  .project-links{ display:inline-flex; align-items:center; gap:8px; flex-wrap:wrap; position:relative; z-index:2; }
+  .proj-link{
+    font-family:var(--mono); font-size:11px; color:var(--muted); border:1px solid var(--line);
+    background:var(--bg-elev2); padding:5px 11px; border-radius:20px; white-space:nowrap;
+    display:inline-flex; align-items:center; gap:6px; text-decoration:none;
+    transition:all .2s ease; cursor:pointer;
+  }
+  .proj-link svg{ flex-shrink:0; display:inline-block; }
+  .proj-link:hover{ border-color:var(--ink); color:var(--ink); background:var(--bg-elev); transform:translateY(-1px); }
+  .proj-link.live{ color:var(--cyan); border-color:var(--cyan-dim); background:rgba(63,208,201,0.06); }
+  .proj-link.live:hover{ border-color:var(--cyan); color:var(--cyan); background:rgba(63,208,201,0.16); box-shadow:0 0 12px var(--cyan-dim); transform:translateY(-1px); }
+  .proj-link .dot2{ width:6px; height:6px; border-radius:50%; background:var(--cyan); box-shadow:0 0 6px var(--cyan); }
   .project-meta{ font-family:var(--mono); font-size:11.5px; color:var(--muted-dim); margin-bottom:16px; }
   .project-card ul{ list-style:none; }
   .project-card li{
@@ -681,7 +693,6 @@
     </div>
 
     <div class="orbit-core"><span class="brackets">&lt;/&gt;</span></div>
-    <div class="orbit-tag"><span class="dot3"></span>status: shipping</div>
   </div>
 </section>
 
@@ -801,6 +812,64 @@
 
   <div class="project-card reveal">
     <div class="project-head">
+      <h3>AI-Powered Interview Platform</h3>
+      <div class="project-links">
+        <a class="proj-link" href="https://github.com/Anujver41/ai_based_mockInterview" target="_blank" rel="noopener noreferrer" title="View GitHub Repository">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub ↗
+        </a>
+        <a class="proj-link live" href="https://ai-based-mock-interview-beta.vercel.app/" target="_blank" rel="noopener noreferrer" title="View Live Platform">
+          <span class="dot2"></span> Live ↗
+        </a>
+      </div>
+    </div>
+    <div class="project-meta">Spring Boot · React · Spring AI — May – Jul 2026</div>
+    <ul>
+      <li>Built a full-stack AI interview prep platform with JWT auth, RBAC, and a layered Controller–Service–Repository architecture.</li>
+      <li>Developed AI features — mock interviews, code review, resume analysis, GitHub analysis, learning roadmaps — using Spring AI.</li>
+      <li>Implemented 40+ REST APIs with PostgreSQL, Redis caching, Kafka async processing, and Docker deployment.</li>
+    </ul>
+    <div class="project-tags"><span class="tag">Spring AI</span><span class="tag">Redis</span><span class="tag">Kafka</span><span class="tag">Docker</span></div>
+  </div>
+
+  <div class="project-card reveal">
+    <div class="project-head">
+      <h3>Agentic AI Shopping Intelligence Platform</h3>
+      <div class="project-links">
+        <a class="proj-link" href="https://github.com/Anujver41/Agentic_AI_Ecommerce" target="_blank" rel="noopener noreferrer" title="View GitHub Repository">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub ↗
+        </a>
+        <a class="proj-link live" href="https://agentic-ai-ecommerce-gules.vercel.app/" target="_blank" rel="noopener noreferrer" title="View Live Platform">
+          <span class="dot2"></span> Live ↗
+        </a>
+      </div>
+    </div>
+    <div class="project-meta">Spring Boot · React · PostgreSQL — July – Aug 2026</div>
+    <ul>
+      <li>Architected an autonomous conversational shopping agent with a multi-stage Java NLP pipeline, achieving 94% intent extraction accuracy across 10,000+ catalog queries.</li>
+      <li>Designed dynamic query generation using Spring Data JPA Specifications, mapping natural language criteria to optimized SQL predicates with sub-50ms database execution.</li>
+      <li>Deployed Token-Bucket rate limiting handling 1,200+ req/min, stateless JWT/RBAC security filters, and Cloudinary CDN, decreasing media payload delivery time by 40%.</li>
+    </ul>
+    <div class="project-tags"><span class="tag">Spring Boot</span><span class="tag">React</span><span class="tag">PostgreSQL</span><span class="tag">NLP</span><span class="tag">JWT/RBAC</span><span class="tag">Cloudinary</span></div>
+  </div>
+
+  <div class="project-card reveal">
+    <div class="project-head">
+      <h3>Research Assistant Chrome Extension</h3>
+      <span class="project-status"><span class="dot2"></span>live</span>
+    </div>
+    <div class="project-meta">Spring Boot · Gemini API — Mar – Apr 2026</div>
+    <ul>
+      <li>Built a Chrome extension that summarizes selected webpage content via the Gemini API in multiple formats.</li>
+      <li>Added keyword extraction and a history feature for quick recall of past summaries.</li>
+      <li>Integrated real-time AI summarization to improve reading and research productivity.</li>
+    </ul>
+    <div class="project-tags"><span class="tag">Gemini API</span><span class="tag">Chrome Extension</span><span class="tag">NLP</span></div>
+  </div>
+
+  <div class="project-card reveal">
+    <div class="project-head">
       <h3>Sentinel AI — Autonomous Visa Compliance Platform</h3>
       <span class="project-status" style="border-color:var(--amber);color:var(--amber)"><span class="dot2" style="background:var(--amber)"></span>🏆 hacknow winner</span>
     </div>
@@ -850,48 +919,6 @@
       <li>Managed the full application lifecycle — scoped app development, Update Set packaging, version-controlled deployment via GitHub.</li>
     </ul>
     <div class="project-tags"><span class="tag">Approvals</span><span class="tag">Update Sets</span><span class="tag">SLA Tracking</span></div>
-  </div>
-
-  <div class="project-card reveal">
-    <div class="project-head">
-      <h3>AI-Powered Interview Platform</h3>
-      <span class="project-status"><span class="dot2"></span>live</span>
-    </div>
-    <div class="project-meta">Spring Boot · React · Spring AI — May – Jul 2026</div>
-    <ul>
-      <li>Built a full-stack AI interview prep platform with JWT auth, RBAC, and a layered Controller–Service–Repository architecture.</li>
-      <li>Developed AI features — mock interviews, code review, resume analysis, GitHub analysis, learning roadmaps — using Spring AI.</li>
-      <li>Implemented 40+ REST APIs with PostgreSQL, Redis caching, Kafka async processing, and Docker deployment.</li>
-    </ul>
-    <div class="project-tags"><span class="tag">Spring AI</span><span class="tag">Redis</span><span class="tag">Kafka</span><span class="tag">Docker</span></div>
-  </div>
-
-  <div class="project-card reveal">
-    <div class="project-head">
-      <h3>Workshop & Certification Tracker</h3>
-      <span class="project-status"><span class="dot2"></span>live</span>
-    </div>
-    <div class="project-meta">React · Spring Boot — Oct 2024 – Jan 2025</div>
-    <ul>
-      <li>Built a full-stack app on a layered Controller–Service–Repository architecture for scalability.</li>
-      <li>Shipped an admin dashboard, student filtering, certificate generation, and ATS score analysis — improving student data management efficiency by 40%.</li>
-      <li>Designed 15+ REST APIs for certificate upload, retrieval, and filtering across 500+ student records with optimized MySQL queries.</li>
-    </ul>
-    <div class="project-tags"><span class="tag">Spring Boot</span><span class="tag">React</span><span class="tag">MySQL</span><span class="tag">ATS Scoring</span></div>
-  </div>
-
-  <div class="project-card reveal">
-    <div class="project-head">
-      <h3>Research Assistant Chrome Extension</h3>
-      <span class="project-status"><span class="dot2"></span>live</span>
-    </div>
-    <div class="project-meta">Spring Boot · Gemini API — Mar – Apr 2026</div>
-    <ul>
-      <li>Built a Chrome extension that summarizes selected webpage content via the Gemini API in multiple formats.</li>
-      <li>Added keyword extraction and a history feature for quick recall of past summaries.</li>
-      <li>Integrated real-time AI summarization to improve reading and research productivity.</li>
-    </ul>
-    <div class="project-tags"><span class="tag">Gemini API</span><span class="tag">Chrome Extension</span><span class="tag">NLP</span></div>
   </div>
 </section>
 
@@ -1437,7 +1464,7 @@ gsap.utils.toArray('.eyebrow .node').forEach(node=>{
   const KB = [
     { kw:['who','about','tell me about','summary','intro'], a:"<b>Anuj Verma</b> is a Computer Science undergrad at Parul University (2023–2027, CGPA 8.12/10), <b>Winner of Deloitte &amp; ServiceNow HackNow 2026</b> 🏆, and a ServiceNow CSA + CAD certified developer. He works across two stacks: backend engineering with <b>Java &amp; Spring Boot</b>, and enterprise workflow automation on <b>ServiceNow</b>. He's solved 1200+ DSA problems and shipped multiple production-grade platforms end to end." },
     { kw:['education','degree','college','university','cgpa','school'], a:"He's pursuing a <b>B.Tech in Computer Science</b> at Parul University, Vadodara (2023–2027, CGPA 8.12/10). Before that, he studied at St. Francis School, Pithampur, MP." },
-    { kw:['project','projects','built','sentinel','sentinel ai','visa','hacknow','urbanos','campusflow','smart city','chrome extension','workshop','tracker','interview platform','ai platform'], a:"He's built 6 major projects:<br>• 🏆 <b>Sentinel AI — Autonomous Visa Compliance Platform</b> (ServiceNow + LLMs + Now Mobile) — <b>1st Place Winner at Deloitte &amp; ServiceNow HackNow 2026</b>; integrates Twilio, Google Translate API, SEVIS mock API, Advisor Workspace &amp; AI Control Tower<br>• <b>UrbanOS — Smart City Digital Twin</b> (ServiceNow) — automated 4 municipal departments with 10+ workflows, cutting manual work ~60%<br>• <b>CampusFlow 360</b> (ServiceNow) — automated admissions and enrollment with multi-stage approvals<br>• <b>AI-Powered Interview Platform</b> (Spring Boot + React + Spring AI) — 40+ REST APIs, Redis, Kafka, Docker<br>• <b>Workshop &amp; Certification Tracker</b> (React + Spring Boot) — 15+ REST APIs, ATS scoring, 500+ student records<br>• <b>Research Assistant Chrome Extension</b> (Spring Boot + Gemini API) — AI webpage summarizer" },
+    { kw:['project','projects','built','sentinel','sentinel ai','visa','hacknow','urbanos','campusflow','smart city','chrome extension','agentic','shopping','ecommerce','interview platform','ai platform'], a:"He's built 6 major projects:<br>• <b>AI-Powered Interview Platform</b> (Spring Boot + React + Spring AI) — 40+ REST APIs, Redis, Kafka, Docker<br>• <b>Agentic AI Shopping Intelligence Platform</b> (Spring Boot + React + PostgreSQL) — autonomous NLP shopping agent, 94% intent accuracy, 10,000+ catalog queries<br>• <b>Research Assistant Chrome Extension</b> (Spring Boot + Gemini API) — AI webpage summarizer<br>• 🏆 <b>Sentinel AI — Autonomous Visa Compliance Platform</b> (ServiceNow + LLMs + Now Mobile) — <b>1st Place Winner at Deloitte &amp; ServiceNow HackNow 2026</b>; integrates Twilio, Google Translate API, SEVIS mock API, Advisor Workspace &amp; AI Control Tower<br>• <b>UrbanOS — Smart City Digital Twin</b> (ServiceNow) — automated 4 municipal departments with 10+ workflows, cutting manual work ~60%<br>• <b>CampusFlow 360</b> (ServiceNow) — automated admissions and enrollment with multi-stage approvals" },
     { kw:['certification','certifications','certified','csa','cad','servicenow cert'], a:"He holds <b>ServiceNow CSA</b> (Certified System Administrator) and <b>CAD</b> (Certified Application Developer), plus GeeksforGeeks Advanced Java, a HackerRank Software Engineer Intern cert, ServiceNow's AI Foundation Program, and several ServiceNow micro-certs (Flow Designer, SimStudio, LabX)." },
     { kw:['skill','skills','tech stack','stack','language','languages','tools'], a:"Core languages: <b>Java, JavaScript, Python, SQL</b>. Backend: Spring Boot, Spring AI, Spring Security, JWT, REST APIs, Microservices. ServiceNow: Flow Designer, IntegrationHub, GlideScript, App Engine Studio. Databases: MySQL, PostgreSQL, Redis. Tools: Git, Docker, Kafka, Postman." },
     { kw:['servicenow'], a:"On ServiceNow he works across Administration (RBAC, Import Sets, SLA Management) and Development (Flow Designer, IntegrationHub, App Engine Studio, GlideScript, Business Rules) — and holds both the CSA and CAD certifications." },
